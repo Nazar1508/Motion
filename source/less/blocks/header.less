@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 22px;
+  background-color: #f56262;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 121px;
+    background-image: url("../img/icon/decor-triange.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 63px 63px 0;
+    border-color: transparent var(--red) transparent transparent;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  margin: 0 auto;
+}
+
+.header__logo-link {
+  display: block;
+  width: 167px;
+}
+
+.header__logo {
+  min-width: auto;
+}
